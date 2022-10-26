@@ -2,7 +2,7 @@ const express = require('express')
 const app = express() 
 const mustacheExpress = require('mustache-express')
 
-app.use(express.urlencoded()) 
+app.use(express.urlencoded({ extended: true }))
 
 let trips = [{title: 'France Trip', dateOfDeparture: 'October 26, 2022', dateOfReturn: 'October 31, 2022'}]
 
